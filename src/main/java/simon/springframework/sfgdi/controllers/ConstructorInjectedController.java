@@ -1,12 +1,14 @@
 package simon.springframework.sfgdi.controllers;
 
+import org.springframework.stereotype.Controller;
 import simon.springframework.sfgdi.services.GreetingService;
 
-public class ContructorInjectedController {
+@Controller
+public class ConstructorInjectedController {
 
     private final GreetingService greetingService;
 
-    public ContructorInjectedController(GreetingService greetingService) {
+    public ConstructorInjectedController(GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 
